@@ -1,6 +1,6 @@
 def average(n,nu,num):
     global mean
-    mean = int((num1+num2+num3)/3)
+    mean = float((num1+num2+num3)/3)
 def display(ave):
     print("The average of",num1,",",num2,",",num3,",is","{:0.5f}".format(ave),".")
 num1 = float(input("Please enter the first number: "))
