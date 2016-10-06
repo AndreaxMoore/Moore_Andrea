@@ -1,4 +1,3 @@
-
 def calcSurf(s):
     return(6*(s*s))
 def display(s):
