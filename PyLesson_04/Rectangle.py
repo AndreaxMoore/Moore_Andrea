@@ -1,4 +1,3 @@
-
 def calcPerim(le,wi):
     return(2*(le+wi))
 def display(le,wi):
