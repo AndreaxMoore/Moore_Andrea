@@ -7,3 +7,4 @@ side = float(input("Please enter the length of the sides: "))
 
 calcSurf(side)
 display(area)
+
