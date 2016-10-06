@@ -1,12 +1,13 @@
-def calcPerim(le,wi):
-   global perim
-   perim = float((le*2)+(wi*2))
-
-def display(prm):
-    print("Your rectangle is","{:0.5f}".format(prm),"sq ft around.")
-
 length = float(input("Please enter the length of your rectangle: "))
 width = float(input("Please enter the width of your rectangle: "))
+perim = 0
 
-calcPerim(length,width)
-display(perim)
+def calcPerim():
+   global perim,length,width
+   perim =((length*2)+(width*2))
+
+def display():
+    print("Your rectangle is","{:0.5f}".format(perim),"ft around.")
+
+calcPerim()
+display()

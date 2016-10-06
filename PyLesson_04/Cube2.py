@@ -1,10 +1,12 @@
-def calcSurf(s):
-    global area
-    area = float(6*(s*s))
-def display(are):
-    print("The surface area of a cube whose sides are",side,"in length is","{:0.5f}".format(are),".")
 side = float(input("Please enter the length of the sides: "))
+area = 0
 
-calcSurf(side)
-display(area)
+def calcSurf():
+    global area,side
+    area = 6*(side*side)
+def display():
+    print("The surface area of a cube whose sides are",side,"in length is","{:0.5f}".format(area),".")
+
+calcSurf()
+display()
 
