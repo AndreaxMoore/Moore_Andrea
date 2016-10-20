@@ -1,11 +1,11 @@
 food1 = input("Please enter item:")
-price1 = int(input("Please enter price:"))
+price1 = float(input("Please enter price:"))
 food2 = input("Please enter item:")
-price2 = int(input("Please enter price:"))
+price2 = float(input("Please enter price:"))
 food3 = input("Please enter item:")
-price3 = int(input("Please enter price:"))
+price3 = float(input("Please enter price:"))
 food4 = input("Please enter item:")
-price4 = int(input("Please enter price:"))
+price4 = float(input("Please enter price:"))
 
 
 Subtotal = (price1 + price2 + price3 + price4 )
@@ -14,10 +14,10 @@ if Subtotal > 2000:
 if Subtotal < 2000:
     discount = 0
 tax = Subtotal*0.17
-Total = Subtotal - discount + tax
+Total = Subtotal - (discount + tax)
 
 def Receipt(num1,num2):
-    print("{:<18}{:.>8}{:0.2f}".format(num1,"$",num2))
+    print("{:<18}.......${:0.2f}".format(num1,num2))
 
 print("<<<<<<<<<<< Reciept >>>>>>>>>>>>>>")
 
@@ -26,9 +26,9 @@ Receipt(food2, price2)
 Receipt(food3, price3)
 Receipt(food4, price4)
 print("\n")
-Receipt("Subtotal",Subtotal)
-Receipt("Discount",discount)
-Receipt("Total",Total)
+Receipt("Subtotal:",Subtotal)
+Receipt("Discount:",discount)
+Receipt("Total:",Total)
 
 print("___________________________________")
 print("* Thank you *")
