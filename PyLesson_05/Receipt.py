@@ -14,7 +14,7 @@ if Subtotal > 2000:
 if Subtotal < 2000:
     discount = 0
 tax = Subtotal*0.17
-Total = Subtotal - (discount + tax)
+Total = Subtotal - discount + tax
 
 def Receipt(num1,num2):
     print("{:<18}.......${:0.2f}".format(num1,num2))
