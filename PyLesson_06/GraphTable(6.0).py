@@ -3,5 +3,5 @@ integer = int(input("please enter an integer: "))
 
 
 for i in range(1, size+1):
-    print("{:<5}{:<5}".format(i,i*integer))
+    print("{:<4}{:<4}".format(i,i*integer))
 
