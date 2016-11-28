@@ -2,9 +2,13 @@ number = int(input("Please enter your starting number: "))
 size = int(input("Please enter your sequence size: "))
 
 seq = []
-
-for in in range(0,size):
+output = ""
+for i in range(0,size):
     if i == 0 or i == 1:
-        start = seq[i]
+        seq.append(number)
     else:
-        
+        seq.append(seq[i-1]+seq[i-2]) 
+    output += str(seq[i])+ " "
+print(output)
+
+

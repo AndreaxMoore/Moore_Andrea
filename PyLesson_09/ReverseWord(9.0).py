@@ -5,14 +5,15 @@ output = ""
 for i in myList:
     output +=  i + " "
 print(output)
+print("\n")
 
 print("Reversed")
-ouput = ""
 
-def reverse():
-    for i in range(len(myList),0):
-        print(myList[i])
-reverse()
+def reverse(words):
+    output = ""
+    for i in range(len(words)-1,-1,-1):
+        output+=(words[i])+ " "
+    print(output)
 
-      
+reverse(myList)      
       
