@@ -12,7 +12,7 @@ while i < len(equation):
         equation.remove(equation[i])
     i += 1
 
-while i in equation < len(equation):
+
     if i < len(equation) and equation[i] == ("+" or "-"):
         if equation[i] == "+":
             equation.append(equation[i-1]+(i+1))
