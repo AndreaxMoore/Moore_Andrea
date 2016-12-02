@@ -6,12 +6,12 @@ def gFactor(number):
             return 1
         else:
             return 0
-def removeComposites():
+def removePrimes():
     for number in nums:
         if gFactor(number)== 0:
             nums.remove(number)
 
-removeComposites()
+removePrimes()
 print(nums)
 
 
