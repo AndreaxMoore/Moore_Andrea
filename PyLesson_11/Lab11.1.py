@@ -1,6 +1,6 @@
 class MilesPerHour:
     #Constructor
-    def __int__(self, dis="", h="", m=""):
+    def __init__(self, dis="", h="", m="",M = 0):
         self.distance = dis
         self.hours = h
         self.minutes = m
@@ -31,12 +31,12 @@ def main():
 
     user1 = MilesPerHour(distance, hours, minutes)
 
-    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getM()>"mph.")    
+    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph()>"mph.")    
 
     user1.setdis("5")
     user1.seth("1")
     user1.setm("0")
 
-    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getM()>"mph.")
+    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph()>"mph.")
 
 main()
