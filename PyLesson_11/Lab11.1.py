@@ -31,12 +31,12 @@ def main():
 
     user1 = MilesPerHour(distance, hours, minutes)
 
-    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph()>"mph.")    
+    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph(),"mph.")    
 
-    user1.setdis("5")
-    user1.seth("1")
-    user1.setm("0")
+    user1.setdis(35)
+    user1.seth(5)
+    user1.setm(0)
 
-    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph()>"mph.")
+    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph(),"mph.")
 
 main()
