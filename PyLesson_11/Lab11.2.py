@@ -1,12 +1,12 @@
 import math
 class Distance:
     #Constructor
-    def __init__(self,x1,y1,x2,y2,d=0):
+    def __init__(self,x1,y1,x2,y2):
         self.xOne = x1
         self.yOne = y1
         self.xTwo = x2
         self.yTwo = y2
-        self.distance = d
+        self.distance = 0
     #Modifier
     def setx1(self,newx1):
         self.xOne = newx1
