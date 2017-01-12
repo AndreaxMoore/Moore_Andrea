@@ -1,42 +1,37 @@
-class MilesPerHour:
+class Car:
     #Constructor
-    def __init__(self, dis="", h="", m="",M = 0):
-        self.distance = dis
-        self.hours = h
-        self.minutes = m
-        self.mph = M
+    def __init__ (self,p,i,e,t):
+        self.paint = p
+        self.interior = i
+        self.engine = e
+        self.tires = t
     #Modifier
-    def setdis(self, newdis):
-        self.distance = newdis
-    def seth(self,newh):
-        self.hours = newh
-    def setm(self,newm):
-        self.minutes = newm
-    def setM(self,newM):
-        self.mph = newM
+    def setp(self,newp):
+        self.paint = newp
+    def seti(self,newi):
+        self.interior = newi
+    def sete(self,newe):
+        self.engine = newe
+    def sett(self,newt):
+        self.tires = newt
     #Accessors
-    def getDistance(self):
-        return self.distance
-    def getHours(self):
-        return self.hours
-    def getMinutes(self):
-        return self.minutes
-    def getMph(self):
-        self.mph= self.distance/(self.hours + self.minutes/60)
-        return self.mph
+    def getPaint(self):
+        return self.paint
+    def getInterior(self):
+        return self.interior
+    def getEngine(self):
+        return self.engine
+    def getTires(self):
+        return self.tires
 def main():
-    distance = int(input("Enter distance: "))
-    hours = int(input("Enter hours: "))
-    minutes = int(input("Enter minutes: "))
+    paint = input("Please enter the color of the paint: ")
+    interior = input("Please enter the interior: ")
+    engine = input("Please enter the engine: ")
+    tires = input("Please enter the tires: ")
 
-    user1 = MilesPerHour(distance, hours, minutes)
+    Car1 = Car(paint,interior,engine,tires)
 
-    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph(),"mph.")    
-
-    user1.setdis(35)
-    user1.seth(5)
-    user1.setm(0)
-
-    print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph(),"mph.")
-
-main()
+    print("Your vehicle is ready......\nPaint: ",Car1.getPaint(),"\nInterior: ",Car1.getInterior(),"\nEngine: ",Car1.getEngine(),"\nTires: ",Car1.getTires())
+    print("\"\"\"")
+   
+main()      
