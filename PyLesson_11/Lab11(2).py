@@ -1,20 +1,17 @@
 import math
 class Distance:
     #Constructor
-    def __init__(self,x1,y1,x2,y2):
+    def __init__(self,x1="",y1="",x2="",y2=""):
         self.xOne = x1
         self.yOne = y1
         self.xTwo = x2
         self.yTwo = y2
         self.distance = 0
     #Modifier
-    def setx1(self,newx1):
+    def setvalues(self,newx1,newy1,newx2,newy2):
         self.xOne = newx1
-    def sety1(self,newy1):
         self.yOne = newy1
-    def setx2(self,newx2):
         self.xTwo = newx2
-    def sety2(self,newy2):
         self.yTwo = newy2
     #Accessor
     def getxOne(self):
@@ -38,12 +35,12 @@ def main():
 
     print("distance = ",newDistance.getDistance())
 
-    newDistance.setx1(5)
-    newDistance.sety1(4)
-    newDistance.setx2(1)
-    newDistance.sety2(1)
+    newDistance.setvalues(5,4,1,1)
+ 
 
     print("distance = ",newDistance.getDistance())
 
 main()
 
+
+  

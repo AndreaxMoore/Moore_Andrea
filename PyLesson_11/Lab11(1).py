@@ -6,13 +6,10 @@ class MilesPerHour:
         self.minutes = m
         self.mph = M
     #Modifier
-    def setdis(self, newdis):
+    def setvalues(self, newdis,newh,newm,newM):
         self.distance = newdis
-    def seth(self,newh):
         self.hours = newh
-    def setm(self,newm):
         self.minutes = newm
-    def setM(self,newM):
         self.mph = newM
     #Accessors
     def getDistance(self):
@@ -33,9 +30,8 @@ def main():
 
     print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph(),"mph.")    
 
-    user1.setdis(35)
-    user1.seth(5)
-    user1.setm(0)
+    user1.setvalues(35,5,0,0)
+ 
 
     print(user1.getDistance(),"miles in", user1.getHours(),"hours and",user1.getMinutes(),"minutes =",user1.getMph(),"mph.")
 
