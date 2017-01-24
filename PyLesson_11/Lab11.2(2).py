@@ -7,9 +7,9 @@ class item:
         self.price = p
         self.UPC = random.randint(1000000000,9999999999)
 
-    def setvalues(self,newn,newmanu):
-        self.name = newn
+    def setvalues(self,newmanu,newn):
         self.manufacturer = newmanu
+        self.name = newn
 
     def getManufacturer(self):
         return self.manufacturer
