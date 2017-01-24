@@ -5,7 +5,7 @@ class item:
         self.name = n
         self.category = c
         self.price = p
-        self.UPC = random.randint(0,10000000000)
+        self.UPC = random.randint(1000000000,9999999999)
 
     def setvalues(self,newn,newmanu):
         self.name = newn
@@ -35,7 +35,7 @@ def main():
         item1 = item(manufacturer,name)
     if c == "y":
         category = input("Please enter the category: ")
-        price = int(input("Please enter the price: "))
-        item1 = item(manufacturer,name,category,str(price))
+        price = input("Please enter the price: ")
+        item1 = item(manufacturer,name,category,price)
     print(item1.__str__())
 main()
