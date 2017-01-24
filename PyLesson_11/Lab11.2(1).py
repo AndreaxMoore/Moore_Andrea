@@ -19,8 +19,8 @@ class User:
     def getUserID(self):
         return self.userID
 
-def __str__(self):
-    return"Customer Info...\nFirst Name: " + self.firstname + \
+    def __str__(self):
+        return"Customer Info...\nFirst Name: " + self.firstname + \
                           "\nLast Name: " + self.lastname + \
                           "\nAvatar: " + self.avatar + \
                           "\nUser ID#: " + str(self.userID)   
@@ -35,5 +35,7 @@ def main():
         user1 = User(firstname,lastname,avatar)
     print(user1.__str__())
 main()
+
+
 
 
