@@ -15,5 +15,5 @@ def average(nums):
     average = 0
     for i in nums:
         average += i
-    return str(average/i)
+    return str(average/10)
 print("The average of the above number is...", average(numbers))
