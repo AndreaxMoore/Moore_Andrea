@@ -33,12 +33,12 @@ def main():
 
     newDistance = Distance(xOne,yOne,xTwo,yTwo)
 
-    print("distance = ",newDistance.getDistance())
+    print("distance = {:0.1f}".format(newDistance.getDistance()))
 
     newDistance.setvalues(5,4,1,1)
  
 
-    print("distance = ",newDistance.getDistance())
+    print("distance = {:0.1f}".format(newDistance.getDistance()))
 
 main()
 
