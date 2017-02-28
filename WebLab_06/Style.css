@@ -1,6 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css?family=Sansita');
 h1{color: orange;
    text-align:center;}
-p{font-family: arial;
+p{font-family: 'Sansita', sans-serif;
   color:blue;}
 a{color:green;}
