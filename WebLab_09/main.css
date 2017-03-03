@@ -1,0 +1,10 @@
+*{color:yellow;}
+p{background-color:orange;}
+p:not(.pines){color:blue;}
+tr:nth-child(odd)> td:nth-child(even){background-color:blue;}
+
+tr:nth-child(odd)> td:nth-child(odd){background-color:red;}
+
+tr:nth-child(even)> td:nth-child(odd){background-color:pink;}
+
+tr:nth-child(even)> td:nth-child(even){background-color:orange;}
