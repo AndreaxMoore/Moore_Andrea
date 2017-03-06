@@ -1,5 +1,5 @@
 *{color:yellow;}
-p{background-color:orange;}
+
 p:not(.pines){color:blue;}
 tr:nth-child(odd)> td:nth-child(even){background-color:blue;}
 
