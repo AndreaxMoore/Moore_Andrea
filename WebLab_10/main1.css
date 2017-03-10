@@ -18,7 +18,7 @@ body{text-align: center;}
 }
 
 #topHeader {
-    background: yellow;
+    background: #ec91ff;
     border: 1px solid #ff4500;
     padding: 20px;
 }
@@ -52,11 +52,11 @@ body{text-align: center;}
     clear: both;
     text-align: center;
     padding: 20px;
-    border-top: 2px solid green;
+    border-top: 2px solid #1b8010;
 }
 
 article {
-    background: yellow;
+    background: rgba(255, 255, 0, 1);
     border: 1px solid purple;
     padding: 20px;
     margin-bottom: 15px;
