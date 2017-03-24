@@ -115,6 +115,7 @@ body{
     background: -webkit-linear-gradient(left, green,lightgreen, palegreen, greenyellow, greenyellow );
     -webkit-border-radius: 10px;
     -webkit-transition: -webkit-transform 2s;
+    -webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
 }
 
 #topHeader:hover{
@@ -190,13 +191,15 @@ body{
 }
 
 #link{
+    display: block;
     border: 1px solid blue;
     background: -webkit-linear-gradient(left, lightblue, deepskyblue);
     -webkit-border-radius: 10px;
     -webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
     padding: 5px;
     -webkit-transition: -webkit-transform 2s;
+    width: 80px;
 }
 #link:hover{
-    -webkit-transform: translate(0px,30px) rotate(360deg) scale(1.5);
+    -webkit-transform: scale(1.5, 1.5);
 }
