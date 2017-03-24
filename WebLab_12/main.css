@@ -1,0 +1,202 @@
+/*body{
+    text-align: center;
+}
+
+#box{
+    display: block;
+    width: 500px;
+    margin: 50px; auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid blue;
+    background:-webkit-linear-gradient(left, red, white, blue) ;
+    -webkit-box-pack: center;
+    -webkit-transform: scale(.8) translate(750px, 0px);
+    -webkit-border-radius: 25px;
+    -webkit-box-shadow: rgba(110,110,110,.8) 10px 8px 8px;
+
+}
+
+#text{
+    font: bold 30px Century Gothic;
+    text-shadow: rgb(50,50,50) 1px 1px 1px;
+}
+
+
+}
+#bigWrapper {
+    display: block;
+    width: 500px;
+    margin: 150px; auto;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid orange;
+    background: -webkit-linear-gradient(45deg, green, greenyellow);
+    -webkit-box-pack: center;
+    -webkit-transform: translate(200px, 50px);
+    -webkit-border-radius: 25px;
+    -webkit-box-shadow: rgba(110, 110, 110, .8) 10px 8px 8px;
+}
+
+#text1 {
+    font: 20px Century Gothic;
+    text-shadow: rgb(50, 50, 50) 1px 1px 1px;
+}
+
+}
+body{
+    text-align: center;
+}
+
+#another{
+    border: 3px dashed yellow;
+    font-size: 15px;
+    display: block;
+    margin: 150px auto;
+    color: white;
+    background: -webkit-linear-gradient(left, blue, deepskyblue);
+    width: 600px;
+    height: 800px;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
+    -webkit-transition: -webkit-transform 2s;
+    text-align: left;
+    -webkit-transform: translate(300px, -600px);
+}
+
+#another > p{
+    text-shadow: darkgray 1px 1px 3px;
+}
+
+#content {
+    font: bold 25px Century Gothic;
+    text-shadow: rgb(50, 50, 50) 1px 1px 1px;
+}
+
+#another:hover{
+    -webkit-transform: translate(30px, 10px) rotate(360deg) ;
+}*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font: bold 20px Comic Sans MS;
+    color: black;
+}
+
+h2{
+    font: bold 14px Tahoma;
+}
+
+header, section, footer, aside, nav, article, hgroup{
+    display: block;
+}
+
+body{
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+}
+
+#bigWrapper{
+    max-width: 1000px;
+    margin: 20px 0px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+
+#topHeader{
+    border: 3px solid black;
+    padding: 20px;
+    background: -webkit-linear-gradient(left, green,lightgreen, palegreen, greenyellow, greenyellow );
+    -webkit-border-radius: 10px;
+    -webkit-transition: -webkit-transform 2s;
+}
+
+#topHeader:hover{
+    -webkit-transform: skew(35deg) scale(1.2);
+}
+
+#topMenu{
+    border: red;
+    background: white;
+    color: white;
+    -webkit-border-radius: 3px;
+}
+
+#topMenu li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px Tahoma;
+    -webkit-border-radius: 3px;
+    border: 2px solid blue;
+    margin-top: 5px;
+    margin-left: 5px;
+    -webkit-transition: -webkit-transform 1s;
+    background: -webkit-linear-gradient(top,orange,yellow);
+}
+#topMenu li:hover{
+    -webkit-transform: scale(1.2,1.2);
+}
+#flexDiv{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+
+#mainSection{
+    border: 2px solid red;
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-box-flex: 100;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
+    background: -webkit-linear-gradient(45deg, orangered, yellow);
+    -webkit-transition: -webkit-transform 2s;
+}
+
+#mainSection:hover{
+    -webkit-transform: translate(30px, 40px)  scale(1.2);
+}
+
+
+#sideNews{
+    border: 1px solid blue;
+    width: 220px;
+    margin: 20px 0px;
+    padding: 30px;
+    background: -webkit-linear-gradient(top, aliceblue, deepskyblue, blue);
+    -webkit-box-ordinal-group: 1;
+    -webkit-box-flex: 10;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
+    -webkit-transition: -webkit-transform 2s;
+}
+
+#sideNews:hover{
+    -webkit-transform: translate(0px,30px) rotate(360deg) scale(1.5);
+}
+
+#pageFooter{
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid green;
+    margin-top: 15px;
+}
+
+#link{
+    border: 1px solid blue;
+    background: -webkit-linear-gradient(left, lightblue, deepskyblue);
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
+    padding: 5px;
+    -webkit-transition: -webkit-transform 2s;
+}
+#link:hover{
+    -webkit-transform: translate(0px,30px) rotate(360deg) scale(1.5);
+}
