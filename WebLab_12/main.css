@@ -188,6 +188,12 @@ body{
     padding: 20px;
     border-top: 2px solid green;
     margin-top: 15px;
+    display: block;
+    -webkit-transition: -webkit-transform 2s;
+}
+
+#pageFooter:hover{
+    -webkit-transform: rotate(360deg);
 }
 
 #link{
