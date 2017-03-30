@@ -3,10 +3,10 @@
 </head>
 <body>
 	<form>
-		Height(meters): <input type = "text" size = 10 maxLength = 5 id = "height" value = "Enter height"/>
+		Height(in): <input type = "text" size = 10 maxLength = 5 id = "height" value = "Enter height"/>
 		<br/>
 		<br/>
-		Weight(kg): <input type = "text" size = 10 maxLength = 5 id = "weight" value = "Enter weight"/>
+		Weight(lb): <input type = "text" size = 10 maxLength = 5 id = "weight" value = "Enter weight"/>
 		<br/>
 		<br/>
 		<input type = "button" value = "Calculate" onclick = "calcBMI()"/>
@@ -15,7 +15,7 @@
 		function calcBMI() {
 			var h = document.getElementById("height").value;
 			var w = document.getElementById("weight").value;
-			document.write("Your BMI is: " + (w/(h*h)) + " !");
+			document.write("Your BMI is: " + (703*(w/(h*h))) + " !");
 		}
 	</script>
 
