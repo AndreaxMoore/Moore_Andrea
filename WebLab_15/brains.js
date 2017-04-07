@@ -24,9 +24,8 @@ function shapes()
     canvas.closePath();
     canvas.stroke();
 
-    var g = canvas.createLinearGradient(10, 10, 100, 200);
-    g.addColorStop(.7, "green");
-    g.addColorStop(.6, "white");
+    var g = canvas.createLinearGradient(10, 10, 300, 200);
+    g.addColorStop(.7, "white");
     g.addColorStop(1, "yellow");
 
     canvas.fillStyle = g;
